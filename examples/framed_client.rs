@@ -14,6 +14,6 @@ async fn main() -> Result<()> {
     if let Some(Ok(data)) = stream.next().await {
         println!("Got: {:?}", String::from_utf8_lossy(&data));
     }
-    
+
     Ok(())
 }

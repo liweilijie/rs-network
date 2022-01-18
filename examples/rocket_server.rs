@@ -12,7 +12,9 @@ struct Hello {
 
 #[get("/", format = "json")]
 fn hello() -> Json<Hello> {
-    Json(Hello {name: "liwei".into()})
+    Json(Hello {
+        name: "liwei".into(),
+    })
 }
 
 #[launch]
